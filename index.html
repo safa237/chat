@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ICONS -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- STYLESHEET -->
+   
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Sidebar</title>
+  </head>
+  <body>
+<div class="parent">
+    <section class="side">
+    <div class="container">
+      <div class="sidebar">
+        <div class="menu-btn">
+          <i class="ph-bold ph-caret-left"></i>
+        </div>
+       <!--- <div class="head">
+          <div class="user-img">
+            <img src="user.jpg" alt="" />
+          </div>
+          <div class="user-details">
+            <p class="name">Innovito</p>
+          </div>
+        </div>-->
+        <div class="nav">
+          <div class="menu">
+            <p class="title">Main</p>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="iconify" data-icon="material-symbols:dashboard-outline" width="50" height="50"></i>
+
+                  <span class="text">Dashboard</span>
+                </a>
+              </li>
+              <li >
+                <a href="#">
+                  <i class="iconify" data-icon="material-symbols:news" width="35" height = "35"></i>
+                  <span class="text">Messages</span>
+                </a>
+              </li>
+              <li >
+                <a href="#">
+                    <i class="iconify" data-icon="fa-solid:robot" width="35" height = "35"></i>
+                  <span class="text">AI Assistant</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                    <i class="iconify" data-icon="material-symbols:news" width="35" height = "35"></i>
+                  <span class="text">news</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                    <i class="iconify" data-icon="material-symbols:news" width="35" height = "35"></i>
+                  <span class="text">courses</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                    <i class="iconify" data-icon="carbon:report" width="35" height = "35"></i>
+                  <span class="text">reports</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu">
+            <p class="title">Settings</p>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="icon ph-bold ph-gear"></i>
+                  <span class="text">Settings</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu">
+          <p class="title">Account</p>
+          <ul>
+            <li>
+                <a href="#">
+                  <i class="icon ph-bold ph-gear"></i>
+                  <span class="text">Profile Settings</span>
+                </a>
+              </li>
+            <li>
+              <a href="#">
+                <i class="icon ph-bold ph-sign-out"></i>
+                <span class="text">Logout</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+    </section>
+
+    <section  class="content">
+    <div class="container-content">
+        <div class="navbar">
+            <p>Messages</p>
+            <div>
+                <input placeholder="search"/>
+            </div>
+            <div class="topnav" >
+             <ul>
+                    <li>
+                        <i class="iconify" data-icon="iconamoon:notification-fill" width="24" height="24"></i>
+                        <div id="notefication-menu">
+                            <div class="note-name">
+                                <div class="tab" style="overflow: hidden;">
+                                    <button style="float:left" class="tablinks active" >ALL</button>
+                                    <button style="float:left" class="tablinks">Unread</button>
+                                    <a href="#" style="float:right ;">Show All</a>
+                                    <a href="#" id="restnotification" style="float:right ;margin-right: 20px;">Mark all as read</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="test">
+                        <i class="iconify" data-icon="iconamoon:notification-fill" width="24" height="24"></i>
+                        <div id="submenue">
+                            <div class="menu">
+                                <ul class="dropdown-divname">
+                                  <li>
+                                      <a href="#">
+                                        <i class="icon ph-bold ph-gear"></i>
+                                        <span class="text">Profile Settings</span>
+                                      </a>
+                                    </li>
+                                  <li>
+                                    <a href="#">
+                                      <i class="icon ph-bold ph-sign-out"></i>
+                                      <span class="text">Logout</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                        </div>
+                    </li>
+
+                    <li style="padding-top: 5px;">العربيه</li>
+                </ul>
+              
+
+            </div>
+        </div>
+
+        <div class="chat">
+            <div class="dialog">
+          
+                  <div class="chat-box">
+                    <!-- client -->
+                    <div class="client">
+                        <img src="image/userimg.jpg" alt="logo" />
+                        <div class="client-info">
+                            <h2>user</h2>
+                            <p>online</p>
+                        </div>
+                    </div>
+        
+                 <div class="chat-content">
+        
+                    <div class="chats">
+                        <div class="client-chat">Hi!</div>
+                        <div class="my-chat">Hi!</div>
+                        <div class="client-chat">How can i help you?</div>
+                        <div class="my-chat">How you create this chat box?How you create this chat box?How you create this chat box?How you create this chat box?How you create this chat box?How you create this chat box?</div>
+                        <div class="client-chat">Watch complete video for your answer.</div>
+                        
+                    
+                        <!-- input field section -->
+                    <div class="chat-input">
+                        <input type="text" placeholder="Enter Message" />
+                        <div class="send-btn">
+                            <i class="iconify" data-icon="material-symbols:send" data-width="35" data-height="35" color="#757575" ></i>
+                        </div>
+                    </div>
+                        
+                    </div>
+
+        
+                </div>
+                </div>
+                
+            </div>
+
+
+            <div class="people">
+                <div class="search-people">
+                    <input placeholder="search"/>
+                </div>
+
+                <hr class="separator" style="border: none; border-top: 1px solid #ccc; margin:  0; ">
+
+
+                <div class="active-user">
+                    <div class="client">
+                        <div>
+                        <img src="image/userimg.jpg" alt="logo" />
+                        <div class="circle-online"></div>
+                        </div>
+                        <div class="client-info">
+                            <p>user1</p>
+                            <p>hey,iam using system</p>
+                        </div>
+                        <div class="time">
+                            <p>12:45</p>
+                        </div>
+                    </div>
+                    <hr class="separator" style="border: none; border-top: 1px solid #ccc; margin: 0; ">
+                    <div class="client">
+                        <div>
+                        <img src="image/userimg.jpg" alt="logo" />
+                        <div class="circle-online"></div>
+                        </div>
+                        <div class="client-info">
+                            <p>user1</p>
+                            <p>hey,iam using system</p>
+                        </div>
+                        <div class="time">
+                            <p>12:45</p>
+                        </div>
+                    </div>
+                    <hr class="separator" style="border: none; border-top: 1px solid #ccc; margin: 0; ">
+                    <div class="client">
+                        <div>
+                        <img src="image/userimg.jpg" alt="logo" />
+                        <div class="circle-online"></div>
+                        </div>
+                        <div class="client-info">
+                            <p>user1</p>
+                            <p>hey,iam using system</p>
+                        </div>
+                        <div class="time">
+                            <p>12:45</p>
+                        </div>
+                    </div>
+                    <hr class="separator" style="border: none; border-top: 1px solid #ccc; margin: 0; ">
+                    <div class="client">
+                        <div>
+                        <img src="image/userimg.jpg" alt="logo" />
+                        <div class="circle-online"></div>
+                        </div>
+                        <div class="client-info">
+                            <p>user1</p>
+                            <p>hey,iam using system</p>
+                        </div>
+                        <div class="time">
+                            <p>12:45</p>
+                        </div>
+                    </div>
+                    <hr class="separator" style="border: none; border-top: 1px solid #ccc; margin: 0; ">
+                    <div class="client">
+                      <div>
+                      <img src="image/userimg.jpg" alt="logo" />
+                      <div class="circle-online"></div>
+                      </div>
+                      <div class="client-info">
+                          <p>user1</p>
+                          <p>hey,iam using system</p>
+                      </div>
+                      <div class="time">
+                          <p>12:45</p>
+                      </div>
+                  </div>
+                  <hr class="separator" style="border: none; border-top: 1px solid #ccc; margin: 0; ">
+                  </div>
+                    
+            </div>
+        </div>
+
+
+    </div>
+    </section>
+</div>
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+      integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
