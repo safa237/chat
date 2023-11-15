@@ -4,157 +4,159 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- ICONS -->
+    
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <!-- STYLESHEET -->
    
-    <link rel="stylesheet" href="css/style.css" />
+   
+    <title>chat</title>
 
-    <title>Sidebar</title>
+    
+
+   <link rel="stylesheet" href="css/external/animate.css">
+  <link rel="stylesheet" href="css/external/all.min.css">
+  <link rel="stylesheet" href="css/external/bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css" />
+   
+  
   </head>
   <body>
+    
 <div class="parent">
-    <section class="side">
-    <div class="container">
-      <div class="sidebar">
-        <div class="menu-btn">
-          <i class="ph-bold ph-caret-left"></i>
-        </div>
-       <!--- <div class="head">
-          <div class="user-img">
-            <img src="user.jpg" alt="" />
-          </div>
-          <div class="user-details">
-            <p class="name">Innovito</p>
-          </div>
-        </div>-->
-        <div class="nav">
-          <div class="menu">
-            <p class="title">Main</p>
-            <ul>
-              <li>
-                <a href="#">
-                  <i class="iconify" data-icon="material-symbols:dashboard-outline" width="50" height="50"></i>
 
-                  <span class="text">Dashboard</span>
-                </a>
-              </li>
-              <li >
-                <a href="#">
-                  <i class="iconify" data-icon="material-symbols:news" width="35" height = "35"></i>
-                  <span class="text">Messages</span>
-                </a>
-              </li>
-              <li >
-                <a href="#">
-                    <i class="iconify" data-icon="fa-solid:robot" width="35" height = "35"></i>
-                  <span class="text">AI Assistant</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                    <i class="iconify" data-icon="material-symbols:news" width="35" height = "35"></i>
-                  <span class="text">news</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                    <i class="iconify" data-icon="material-symbols:news" width="35" height = "35"></i>
-                  <span class="text">courses</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                    <i class="iconify" data-icon="carbon:report" width="35" height = "35"></i>
-                  <span class="text">reports</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="menu">
-            <p class="title">Settings</p>
-            <ul>
-              <li>
-                <a href="#">
-                  <i class="icon ph-bold ph-gear"></i>
-                  <span class="text">Settings</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="menu">
-          <p class="title">Account</p>
-          <ul>
-            <li>
-                <a href="#">
-                  <i class="icon ph-bold ph-gear"></i>
-                  <span class="text">Profile Settings</span>
-                </a>
-              </li>
-            <li>
-              <a href="#">
-                <i class="icon ph-bold ph-sign-out"></i>
-                <span class="text">Logout</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="#">
+      <p style="color: #ad9d0d;">Messages</p>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       
-    </div>
-    </section>
-
-    <section  class="content">
-    <div class="container-content">
-        <div class="navbar">
-            <p>Messages</p>
+      <i class="icon ph-bold ph-gear navbar-toggler-icon"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      
             <div>
-                <input placeholder="search"/>
+                <input placeholder="search message"/>
             </div>
-            <div class="topnav" >
-             <ul>
-                    <li>
-                        <i class="iconify" data-icon="iconamoon:notification-fill" width="24" height="24"></i>
-                        <div id="notefication-menu">
-                            <div class="note-name">
-                                <div class="tab" style="overflow: hidden;">
-                                    <button style="float:left" class="tablinks active" >ALL</button>
-                                    <button style="float:left" class="tablinks">Unread</button>
-                                    <a href="#" style="float:right ;">Show All</a>
-                                    <a href="#" id="restnotification" style="float:right ;margin-right: 20px;">Mark all as read</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="test">
-                        <i class="iconify" data-icon="iconamoon:notification-fill" width="24" height="24"></i>
-                        <div id="submenue">
-                            <div class="menu">
-                                <ul class="dropdown-divname">
-                                  <li>
-                                      <a href="#">
-                                        <i class="icon ph-bold ph-gear"></i>
-                                        <span class="text">Profile Settings</span>
-                                      </a>
-                                    </li>
-                                  <li>
-                                    <a href="#">
-                                      <i class="icon ph-bold ph-sign-out"></i>
-                                      <span class="text">Logout</span>
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                        </div>
-                    </li>
+      <ul class="navbar-nav ml-auto">
+        <li>
+          <i class="iconify" data-icon="iconamoon:notification-fill" width="24" height="24"></i>
+          <ul class="submenu2">
+          <div id="notefication-menu">
+              <div class="note-name">
+                  <div class="tab" style="overflow: hidden;">
+                      <button style="float:left" class="tablinks active" >ALL</button>
+                      <button style="float:left" class="tablinks">Unread</button>
+                      
+                      <a href="#" id="restnotification" style="float:right ;margin-right: 20px;">Mark all as read</a>
+                  </div>
+              </div>
+          </div>
+        </ul>
+      </li>
+        
+        
+        <li class="nav-item">
+          <a>
+          <img src="image/userimg.jpg" alt="logo" />
+          <ul class="submenu2">
+            <li><a href="#">setting</a></li>
+            <li><a href="#">logout</a></li>
+          </ul>
+          </a>
+        </li>
 
-                    <li style="padding-top: 5px;">العربيه</li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#" >العربيه </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section  class="content">
+    <div class="container-content">
+
+      <section class="side">
+        <div class="container">
+          <div class="sidebar">
+            <div class="menu-btn">
+              <i class="ph-bold ph-caret-left"></i>
+            </div>
+           
+            <div class="navv">
+              <div class="menu">
+                <p class="title">Main</p>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="iconify" data-icon="material-symbols:dashboard-outline" width="50" height="50"></i>
+    
+                      <span class="text">Dashboard</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="#">
+                      <i class="iconify" data-icon="material-symbols:news" width="35" height = "35"></i>
+                      <span class="text">Messages</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="#">
+                        <i class="iconify" data-icon="fa-solid:robot" width="35" height = "35"></i>
+                      <span class="text">AI Assistant</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                        <i class="iconify" data-icon="material-symbols:news" width="35" height = "35"></i>
+                      <span class="text">news</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                        <i class="iconify" data-icon="material-symbols:news" width="35" height = "35"></i>
+                      <span class="text">courses</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                        <i class="iconify" data-icon="carbon:report" width="35" height = "35"></i>
+                      <span class="text">reports</span>
+                    </a>
+                  </li>
                 </ul>
-              
-
+              </div>
+              <div class="menu">
+                <p class="title">Settings</p>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="icon ph-bold ph-gear"></i>
+                      <span class="text">Settings</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <div class="menu">
+              <p class="title">Account</p>
+              <ul>
+                <li>
+                    <a href="#">
+                      <i class="icon ph-bold ph-gear"></i>
+                      <span class="text">Profile Settings</span>
+                    </a>
+                  </li>
+                <li>
+                  <a href="#">
+                    <i class="icon ph-bold ph-sign-out"></i>
+                    <span class="text">Logout</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
         </div>
+        </section>
 
         <div class="chat">
             <div class="dialog">
@@ -165,7 +167,7 @@
                         <img src="image/userimg.jpg" alt="logo" />
                         <div class="client-info">
                             <h2>user</h2>
-                            <p>online</p>
+                           
                         </div>
                     </div>
         
@@ -197,6 +199,7 @@
 
 
             <div class="people">
+              <div class="active-people">
                 <div class="search-people">
                     <input placeholder="search"/>
                 </div>
@@ -211,7 +214,7 @@
                         <div class="circle-online"></div>
                         </div>
                         <div class="client-info">
-                            <p>user1</p>
+                            <h6>user1</h6>
                             <p>hey,iam using system</p>
                         </div>
                         <div class="time">
@@ -225,7 +228,7 @@
                         <div class="circle-online"></div>
                         </div>
                         <div class="client-info">
-                            <p>user1</p>
+                          <h6>user1</h6>
                             <p>hey,iam using system</p>
                         </div>
                         <div class="time">
@@ -239,7 +242,7 @@
                         <div class="circle-online"></div>
                         </div>
                         <div class="client-info">
-                            <p>user1</p>
+                          <h6>user1</h6>
                             <p>hey,iam using system</p>
                         </div>
                         <div class="time">
@@ -253,7 +256,7 @@
                         <div class="circle-online"></div>
                         </div>
                         <div class="client-info">
-                            <p>user1</p>
+                          <h6>user1</h6>
                             <p>hey,iam using system</p>
                         </div>
                         <div class="time">
@@ -267,7 +270,7 @@
                       <div class="circle-online"></div>
                       </div>
                       <div class="client-info">
-                          <p>user1</p>
+                        <h6>user1</h6>
                           <p>hey,iam using system</p>
                       </div>
                       <div class="time">
@@ -276,14 +279,17 @@
                   </div>
                   <hr class="separator" style="border: none; border-top: 1px solid #ccc; margin: 0; ">
                   </div>
-                    
+             </div>      
             </div>
+
         </div>
 
 
     </div>
-    </section>
+  </section>
+  
 </div>
+
 
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     
@@ -292,7 +298,15 @@
       integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
       crossorigin="anonymous"
     ></script>
-    <script src="js/script.js"></script>
+
+
+  <script src="js/external/bootstrap.min.js"></script>
+ <script src="js/script.js"></script>
+
+  
+
+
+
     
   </body>
 </html>

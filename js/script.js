@@ -1,30 +1,9 @@
-
-
-$(".menu > ul > li").click(function (e) {
-  // remove active from already active
-  $(this).siblings().removeClass("active");
-  // add active to clicked
-  $(this).toggleClass("active");
-  // if has sub menu open it
-  $(this).find("ul").slideToggle();
-  // close other sub menu if any open
-  $(this).siblings().find("ul").slideUp();
-  // remove active class of sub menu items
-  $(this).siblings().find("ul").find("li").removeClass("active");
-});
-
 $(".menu-btn").click(function () {
   $(".sidebar").toggleClass("active");
 });
 
-// Check the screen width on page load
+
 $(document).ready(function () {
   $(".sidebar").addClass("active"); // Set the sidebar to be expanded by default
 });
 
-// Check the screen width on window resize
-$(window).resize(function () {
-  if ($(window).width() <= 768) {
-    $(".sidebar").removeClass("active");
-  }
-});
